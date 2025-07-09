@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product list with cart</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <main id="main-section">
+    <div id="desserts-section">
+      <h1 class="desserts-title">Desserts</h1>
+      <div class="dessert-item">
+        <div class="dessert-image-cadre">
+          <img class="pic" src="assets/images/image-waffle-desktop.jpg" alt="">
+          <input class="dessert-add" type="button" value="Add to Cart">
+        </div>
+        <p class="dessert-type">Waffle</p>
+        <p class="dessert-name">Waffle with berries</p>
+        <p class="dessert-price">$8.50</p>
+      </div>
+      <div class="dessert-item">
+        <div class="dessert-image-cadre">
+          <img class="pic" src="assets/images/image-creme-brulee-desktop.jpg" alt="">
+          <input class="dessert-add" type="button" value="Add to Cart">
+        </div>
+        <p class="dessert-type">Creme Brulée</p>
+        <p class="dessert-name">Vanilla Bean Crème brulée</p>
+        <p class="dessert-price">$4.50</p>
+      </div>
+      <div class="dessert-item">
+        <div class="dessert-image-cadre">
+          <img class="pic" src="assets/images/image-macaron-desktop.jpg" alt="">
+          <input class="dessert-add" type="button" value="Add to Cart">
+        </div>
+        <p class="dessert-type">Macaron</p>
+        <p class="dessert-name">Macaron mix of five</p>
+        <p class="dessert-price">$7.00</p>
+      </div>
+      <div class="dessert-item">
+        <div class="dessert-image-cadre">
+          <img class="pic" src="assets/images/image-tiramisu-desktop.jpg" alt="">
+          <input class="dessert-add" type="button" value="Add to Cart">
+        </div>
+        <p class="dessert-type">Tiramisu</p>
+        <p class="dessert-name">Classic Tiramisu</p>
+        <p class="dessert-price">$5.50</p>
+      </div>
+      <div class="dessert-item">
+        <div class="dessert-image-cadre">
+          <img class="pic" src="assets/images/image-baklava-desktop.jpg" alt="">
+          <input class="dessert-add" type="button" value="Add to Cart">
+        </div>
+        <p class="dessert-type">Baklava</p>
+        <p class="dessert-name">Pistashio Baklava</p>
+        <p class="dessert-price">$4.00</p>
+      </div>
+      <div class="dessert-item">
+        <div class="dessert-image-cadre">
+          <img class="pic" src="assets/images/image-meringue-desktop.jpg" alt="">
+          <input class="dessert-add" type="button" value="Add to Cart">
+        </div>
+        <p class="dessert-type">Pie</p>
+        <p class="dessert-name">Lemon Meringue Pie</p>
+        <p class="dessert-price">$5.00</p>
+      </div>
+      <div class="dessert-item">
+        <div class="dessert-image-cadre">
+          <img class="pic" src="assets/images/image-cake-desktop.jpg" alt="">
+          <input class="dessert-add" type="button" value="Add to Cart">
+        </div>
+        <p class="dessert-type">Cake</p>
+        <p class="dessert-name">Red Velvet Cake</p>
+        <p class="dessert-price">$4.50</p>
+      </div>
+      <div class="dessert-item">
+        <div class="dessert-image-cadre">
+          <img class="pic" src="assets/images/image-brownie-desktop.jpg" alt="">
+          <input class="dessert-add" type="button" value="Add to Cart">
+        </div>
+        <p class="dessert-type">Brownie</p>
+        <p class="dessert-name">Salted Caramel Brownie</p>
+        <p class="dessert-price">$5.50</p>
+
+      </div>
+      <div class="dessert-item">
+        <div class="dessert-image-cadre">
+          <img class="pic" src="assets/images/image-panna-cotta-desktop.jpg" alt="">
+          <input class="dessert-add" type="button" value="Add to Cart">
+        </div>
+        <p class="dessert-type">Panna Cotta</p>
+        <p class="dessert-name">Vanilla Panna Cotta</p>
+        <p class="dessert-price">$6.50</p>
+      </div>
+    </div>
+    <div id="shopping-cart">
+      <p classe = "font-tete2" >Your Cart (0)</p>
+      <img src="assets/images/illustration-empty-cart.svg" alt="" srcset="">
+      <p>Your added items will appear here</p>
+    </div>
+  </main>
+  <div id="modal-cart">
+    <div class="img-container">
+ <img class = "icon-conf" src="assets/images/icon-order-confirmed.svg">
+    </div>
+     <div class = "en-tete" >
+      <h2 class="style_titre1">Order Confirmed </h2>
+      <h3 class="style_titre2">We hope you enjoy your food! </h3>
+     </div>
+      
+      <ul class="cart-modal-items"></ul>
+      <div class="retour">
+      <input type="button" value="Start New Order" class="new-order">
+      </div>
+     
+    
+  </div>
+
+  <script src="index.js"></script>
+
+
+  
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">KABOUB  Khaled</a>.
+  </div>
+
+</body>
+</html>

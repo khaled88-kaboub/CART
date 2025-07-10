@@ -469,6 +469,24 @@ font-weight: 600;
     width: 90%;
 }
 
+#modal-cart{
+    
+    height:200%;
+   
 
+}
 
+.taille_photo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-left: 20px;
+    border-width: 3px;
+    border: solid gray;
+    
+}
+
+.divtextes {
+    font-size: 0.9rem;
+}
 }
